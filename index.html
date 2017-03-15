@@ -1,0 +1,125 @@
+<!--
+ * Created by Ricky on 17/2/20.
+ * Date:二月
+ * Project Name: doubanFM.
+ * Package Name: .
+ * ©2016-2017 Ricky. All Rights Reserved.
+ * Keep it Simple and Stupid!
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="never">
+    <title>MyMusic</title>
+    <script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.3.min.js"></script>
+    <link href="http://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+    <!--顶栏-->
+    <div class="top layout">
+        <!--顶栏左侧-->
+        <div class="listen-heart">
+            <p class="listen-fm">听心<span>FM</span></p>
+            <p class="listen-motto">听见你的心</p>
+        </div>
+        <!--顶栏左侧小字-->
+        <div class="listen-small">
+            <p>Keep it Simple and Stupid!</p>
+        </div>
+        <!--顶栏右侧两个框(博客和源码)-->
+        <div class="top-right">
+            <a href="https://rickyer.com" class="top-bs top-blog">博客</a>
+            <a href="" class=" top-bs top-src">源码</a>
+        </div>
+    </div>
+
+
+    <audio id="audio" src="http://m2.music.126.net/m6CzYDcmcsRhWpexun6yjA==/18600438208787012.mp3">
+    </audio>
+
+
+    <!--中栏、歌曲节界面栏-->
+    <div class="mid layout">
+        <!--左侧音乐头像-->
+        <div class="music-pic">
+
+        </div>
+        <!--音乐内容栏-->
+        <div class="content">
+            <!--歌曲名称-->
+            <div class="music-name">
+                <p>告白气球</p>
+            </div>
+            <!--歌手栏-->
+            <div class="music-singer">
+                <p>周杰伦</p>
+            </div>
+            <!--歌曲进度-->
+            <div class="speed">
+                <div class="speed-now" style=></div>
+            </div>
+            <!--歌曲时间和声音-->
+            <div class="time clearfix">
+                <p class="music-time"> <span id="currentTime">123</span> / <span id="totalTime"></span></p>
+                <!--声音按钮-->
+                <div class="voice">
+                    <i class="fa fa-volume-up" aria-hidden="true"></i>
+                    <span id="voice-bar">
+					    <span id="voiced-bar"></span>
+				    </span>
+                </div>
+            </div>
+
+
+
+            <!--播放按钮（三个）、点赞的图标-->
+            <div class="play">
+                <!--左侧图标-->
+                <div class="love clearfix">
+                    <!--喜欢按钮-->
+                    <a href="#" class="btn" id="btn-love"><i class="fa fa-heart-o fa-2x" aria-hidden="true" id="love1"></i></a>
+                    <!--随机按钮-->
+                    <a href="#" class="btn" id="btn-random"><i class="fa fa-random fa-2x" aria-hidden="true" id="random1"></i></a>
+                </div>
+                <!--右侧图标-->
+                <div class="next">
+                    <!--上一首按钮-->
+                    <!--<a href="#" class="btn" id="btn-prev"><i class="fa fa-step-backward fa-2x" aria-hidden="true"></i></a>-->
+                    <!--播放按钮-->
+                    <a href="#" class="btn" id="btn-play"><i class="fa fa-pause fa-2x" aria-hidden="true"></i></a>
+                    <!--下一首按钮-->
+                    <a href="#" class="btn" id="btn-next"><i class="fa fa-step-forward fa-2x" aria-hidden="true"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+        <!--右侧歌词栏-->
+        <div class="lyric">
+            <ul class="lyric-item">
+                <li>暂无歌词，请欣赏</li>
+            </ul>
+        </div>
+    </div>
+
+    <!--底栏-->
+    <div class="bot">
+        <p class="beian"><a href="#" style="color: #db7093">©2016-2017</a> | <a href="">Ricky</a> </p>
+        <p class="beian"><a href="http://www.miitbeian.gov.cn/" >浙ICP备15040135号-1</a></p>
+    </div>
+
+
+
+    <script src="./js/music.js"></script>
+    <script src="jquery-2.0.3.min.js"></script>
+
+</body>
+</html>
