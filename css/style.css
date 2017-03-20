@@ -424,13 +424,13 @@ body{
 }
 
 /*媒体查询*/
-　@media screen and (min-height: 800px) {
+/* 　@media screen and (min-height: 800px) {
     .mid{
         position: relative;
         height: 600px;
         margin-top: 10px;
     }
-}
+} */
 
 
 
